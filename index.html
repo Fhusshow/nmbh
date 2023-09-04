@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Service</title>
+    <link rel="stylesheet" type="text/css"  href="./style.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+    <nav>
+            <label  class="logo">S.R.Eletronics system</label>
+            <ul>
+				<li><a href="product.html">Our Product</a></li>
+				<li><a href="aboutus.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="Area.html">Location</a></li>
+				<li><a href="service.html">Services</a></li>
+            </ul>
+    </nav>
+     <div class="container">     
+        <div class="swiper">
+        <div class="swiper-wrapper">
+			
+        <div class="swiper-slide"><a href="www.google.com"><img src="./image of jpg/OIP (1).jpeg"></a></div>
+		<div class="swiper-slide"><a href="www.google.com"><img src="./image of jpg/OIP (1).jpeg"></a></div>
+		<div class="swiper-slide"><a href="www.google.com"><img src="./image of jpg/OIP (1).jpeg"></a></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+     </div>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     <script>
+        const swiper = new Swiper('.swiper', {
+             
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+
+                
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                },
+
+                 
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+
+});
+     </script>
+		<div class="container">
+			<div class="product-container">
+				<div class="product" data-name="p-1">
+					<img src="./image of jpg/WhatsApp Image 2023-08-31 at 13.31.35.jpg" alt="">
+					<h3>Ultra Sonic Box</h3>
+				</div>
+				<div class="product" data-name="p-2">
+					<img src="./image of jpg/WhatsApp Image 2023-08-31 at 13.32.11.jpg" alt="">
+					<h3>Transistor</h3>
+				</div>
+		</div>
+</body>
+</html>
